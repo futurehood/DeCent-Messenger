@@ -1,0 +1,191 @@
+#connections {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: var(--header-height);
+    left: var(--contacts-width);
+    width: calc(100% - var(--contacts-width));
+    height: calc(100% - var(--header-height));
+    background: var(--connections-background);
+}
+#connections>input[type=radio]{
+    display: none;
+}
+#connections>section>header{
+    overflow: auto;
+    box-sizing: border-box;
+    background: #545454;
+    border-bottom: .1em solid #646464;
+}
+#connections>section>header>label{
+    display: block;
+    box-sizing: border-box;
+    padding: .5em 1em;
+    width: 100%;
+}
+#connections>section>header>label>span{
+    font-size: .95em;
+    font-weight: 400;
+    color: #989898;
+}
+#connections>section>header:hover>label>span{
+    color: #b9b9b9;
+}
+#connections>section>header>label>span:before{
+    display: inline-block;
+    width: 1em;
+    margin: 0 .5em 0 0;
+    text-align: center;
+}
+#calls>header>label>span:before{
+    content: "\1F57B";
+    /*content: "\1F5A7";*/
+}
+#messaging>header>label>span:before{
+    content: "\2709";
+}
+#connections>section>header>menu{
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 2.5em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#connections>section>header>menu>li{
+    display: block;
+    float: left;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+}
+#connections>section>header>menu>li>label{
+    display: block;
+    border: .1em solid #fff;
+    border-radius: 1em;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+#connections>section>header>menu>li>menu{
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    width: 13em;
+    /*height: 2.5em;*/
+    margin: 0;
+    padding: .25em;
+    list-style: none;
+    background: rgb(65, 65, 65);
+    color: #b4b4b4;
+}
+#connections>section>header>menu>li>menu:nth-of-type(1){
+    top: 2.5em;
+    right: 0;
+}
+#connections>section>header>menu>li>menu:nth-of-type(1):after{
+    display: inline-block;
+    content: "🡙";
+    /*float: left;*/
+    width: 1.5em;
+    padding: 0 0 0 .25em;
+
+    text-align: center;
+    border-left: .1em solid #515151;
+}
+#connections>section>header>menu>li>menu:nth-of-type(2):after{
+    display: inline-block;
+    content: "🡘";
+    /*float: left;*/
+    width: 1.5em;
+    padding: 0 0 0 .25em;
+    text-align: center;
+    border-left: .1em solid #515151;
+}
+#connections>section>header>menu>li>menu:nth-of-type(2){
+    top: 5em;
+    right: 0;
+}
+#connections>section>header>menu>li:hover>menu{
+    display: block;
+}
+#connections>section>header>menu>li>menu>li{
+    margin: 0;
+    padding: 0 .25em;
+}
+#connections>section>header>menu>li>menu>li:hover{
+    background: #4b4b4b;
+    color: #fff;
+}
+#connections>section>header>menu>li>menu>li>label>span{
+    font-size: .75em;
+}
+#connections>section>ul{
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#connections>section{
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+}
+#view-full:checked~section{
+    height: calc(100% - 2.5em);
+}
+
+#calls{
+    /*background: plum;*/
+}
+#messaging{
+    /*background: #ddb7a0;*/
+}
+
+#view-full:checked~#view-focus-calls:checked+#calls{
+    /*background: plum;*/
+}
+#view-full:checked~#view-focus-calls:not(:checked)+#calls{
+    top: calc(100% - 2.5em);
+    height: 0;
+}
+#view-full:checked~#view-focus-calls:checked~#messaging{
+    top: calc(100% - 2.5em);
+    height: 0;
+}
+
+#view-split-horizontal:checked~section{
+    height: 50%;
+}
+#view-split-horizontal:checked~#view-focus-calls:checked+#calls{
+    top: 0;
+}
+#view-split-horizontal:checked~#view-focus-calls:not(:checked)+#calls{
+    top: calc(50%);
+}
+#view-split-horizontal:checked~#view-focus-calls:checked~#messaging{
+    top: calc(50%);
+}
+
+#view-split-vertical:checked~section{
+    width: 50%;
+    height: 100%;
+}
+#view-split-vertical:checked~#view-focus-calls:checked+#calls{
+    top: 0;
+    border-right: .025em solid #5a5a5a;
+}
+#view-split-vertical:checked~#view-focus-calls:not(:checked)+#calls{
+    left: 50%;
+    border-left: .025em solid #5a5a5a;
+}
+#view-split-vertical:checked~#view-focus-calls:checked~#messaging{
+    left: 50%;
+}

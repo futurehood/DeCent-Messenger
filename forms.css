@@ -1,0 +1,269 @@
+/*****************************************
+** Form styles
+*****************************************/
+form>h2{
+    margin: 0 0 1em;
+    padding: 0 0 1em;
+    border-bottom: .1em solid #a9a9a9;
+}
+form>h2>span{
+    font-size: 1.25em;
+}
+form>fieldset{
+    clear: both;
+    box-sizing: border-box;
+    margin: 0 0 1em;
+    padding: .5em 1.5em 1em;
+    border: .1em solid #6b6b6b;
+    border-radius: .5em;
+    background: #4b4b4b;
+}
+form>fieldset>legend{
+    margin: 0;
+    padding: .75em;
+    color: var(--subheading-color);
+    font-size: 1.25em;
+    font-family: monospace;
+    font-weight: 400;
+}
+form>fieldset>label{
+    display: block;
+    /*overflow: auto;*/
+}
+form>fieldset>label:not(:last-of-type){
+    margin: 0 0 1em;
+}
+section>form>fieldset>label:last-of-type{
+    /*margin: 0 0 1em;*/
+    border-bottom: .1em solid #727272;
+}
+dialog>form>fieldset>label:last-of-type+details[open]{
+    /*margin: 0 0 1em;*/
+    /*border-top: .1em solid #727272;*/
+}
+form>fieldset>label>span{
+    display: block;
+    margin: 0 0 1em;
+    padding: 0 0 1em;
+    /*font-family: monospace;*/
+    border-bottom: .1em solid #727272;
+    font-size: .9em;
+}
+form>fieldset+button:nth-of-type(1),
+form>fieldset>button:nth-of-type(1){
+    float: left;
+}
+form>fieldset+button+button:nth-of-type(2),
+form>fieldset>button:nth-of-type(2){
+    float: right;
+}
+form>h2+button{
+    float: right;
+}
+
+form>fieldset>ul{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+form>fieldset>ul>li{
+    height: 3.5em;
+}
+
+
+form>fieldset>ul>li>input:not([type=file]){
+    float: left;
+    width: calc(100% - 10.5em);
+}
+/*form>fieldset>ul>li>button{*/
+/*    float: left;*/
+/*    width: 2.5em;*/
+/*    height: 2.5em;*/
+/*    margin-left: .5em;*/
+/*    padding: 0;*/
+/*    text-align: center;*/
+/*}*/
+
+progress,
+progress::-webkit-progress-value{
+    display: block;
+    float: left;
+    width: 1em;
+    height: 1em;
+    margin: .75em .75em 0 0;
+    border: 0;
+    border-radius: 1em;
+    background: var(--error);
+}
+progress:before{
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 1em;
+    width: 1em;
+    height: 1em;
+    background: var(--link-color);
+}
+progress:not([value]),
+progress[value="0"]::-moz-progress-bar,
+progress[value="0"]::-webkit-progress-bar{
+    background: var(--error);
+}
+progress[value="1"]::-moz-progress-bar,
+progress[value="1"]::-webkit-progress-bar{
+    background: var(--warning);
+}
+progress[value="2"]::-moz-progress-bar,
+progress[value="2"]::-webkit-progress-bar{
+    background: var(--success);
+}
+
+input[type=checkbox]{
+    accent-color: #a245ff;
+    color: #fff;
+    padding: 1em;
+}
+input[type=text],
+input[type=number]{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    border: 0;
+    border-radius: .25em;
+    font-size: 1em;
+    font-family: monospace;
+    color: #fff;
+    background: #7c7c7c;
+}
+
+/*span+input[type=number]{*/
+/*    display: block;*/
+/*    width: 7em;*/
+/*    margin: 0 0 1em;*/
+/*    padding: .25em;*/
+/*    border: 0;*/
+/*    border-radius: .25em;*/
+/*    font-size: 1em;*/
+/*    font-family: monospace;*/
+/*    color: #fff;*/
+/*    background: #7c7c7c;*/
+/*}*/
+button{
+    display: block;
+    padding: .5em 1em;
+    font-size: 1em;
+    border: 0;
+    border-radius: .5em;
+    color: inherit;
+}
+button>span{
+    font-size: .9em;
+    /*vertical-align: middle;*/
+}
+button>span:before{
+    margin: 0 .5em 0 0;
+}
+
+button[name=cancel],
+button[name=sign-out]{
+    background: var(--link-color);
+}
+button[name=edit]>span:before{
+    content: "\0270E";
+}
+button[name=cancel]>span:before{
+    content: "\02716";
+}
+button[name=manage]>span:before{
+    content: "\0FE19";
+    position: relative;
+    top: .1em;
+}
+button[name=add],
+button[name=save]{
+    background: var(--success);
+}
+button[name=save]>span:before{
+    content: "\02714";
+}
+
+fieldset>button[name=delete]{
+    background: var(--error);
+}
+button[name=delete]>span:before{
+    content: "\1F5D1";
+}
+button[name=add]>span:before{
+    content: "+";
+    font-size: 1.25em;
+    vertical-align: baseline;
+    margin: 0 .25em 0 0;
+}
+
+/*button[name=manage]{*/
+/*    background: var(--error);*/
+/*}*/
+
+/*progress[value="0"]~menu>li>button[name=toggle]{*/
+/*     background: var(--success);*/
+/*}*/
+/*progress[value="1"]~menu>li>button[name=toggle]{*/
+/*    background: var(--warning);*/
+/*}*/
+/*progress[value="2"]~menu>li>button[name=toggle]{*/
+/*    background: var(--error);*/
+/*}*/
+progress[value="0"]~menu>li>button[name=toggle]>span:before{
+    content: "\21bb";
+}
+progress[value="2"]~menu>li>button[name=toggle]>span:before{
+    content: "\1F5D9";
+}
+
+fieldset>details{
+    margin: 0 0 1em;
+    position: relative;
+}
+fieldset>details>summary{
+    display: block;
+    position: absolute;
+    top: -2.75em;
+    right: 0;
+    margin: 0 0 1em;
+}
+dialog>form>fieldset>details>summary {
+    top: -15.35em;
+}
+fieldset>details>summary>span{
+    color: var(--accent);
+}
+details>label{
+    display: block;
+    clear: right;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0 1em;
+    overflow: auto;
+    border-bottom: .1em solid #727272;
+}
+details>label>span{
+    display: block;
+    float: left;
+    margin: 1.15em 0;
+    font-size: .9em;
+}
+details>label>span+input[type=checkbox]{
+    display: block;
+    float: right;
+    position: relative;
+    top: .75em;
+}
+details>label>span+input[type=number]{
+    display: block;
+    float: right;
+    width: 8em;
+    margin: .25em .25em 1em;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Messenger</title>
+</head>
+<body>
+<template id="profile-selector-dialog">
+	<dialog id="profile-selector">
+		<form>
+			<h2>
+				<span>Sign In</span>
+			</h2>
+			<input id="sign-in-with-existing-profile" name="tabs" type="radio" checked>
+			<input id="create-a-new-profile" name="tabs" type="radio">
+			<section>
+				<fieldset>
+					<input id="remember-profile" name="remember_profile" type="checkbox">
+					<label for="remember-profile">Remember selection</label>
+					<h3>
+						<span>Select a profile to continue</span>
+					</h3>
+					<menu></menu>
+				</fieldset>
+				<label for="create-a-new-profile">
+					<span>Create a new profile &#10095;</span>
+				</label>
+			</section>
+			<section>
+				<fieldset>
+					<h3>
+						<span>Create a new profile</span>
+					</h3>
+					<label>
+						<span>Display Name:</span>
+						<input name="name" type="text">
+					</label>
+					<label>
+						<span>Private Key:</span>
+						<input name="private_key" type="text" disabled>
+					</label>
+					<label class="opt">
+						<span>Avatar</span>
+						<img>
+						<input name="avatar" type="file">
+					</label>
+				</fieldset>
+				<label for="sign-in-with-existing-profile">
+					<span>&#10094; Profiles</span>
+				</label>
+				<button name="save">
+					<span>Save</span>
+				</button>
+			</section>
+		</form>
+	</dialog>
+</template>
+<template id="profile-selector-menu-item">
+	<li>
+		<button name="sign-in" value="${id}" autofocus>
+			<picture>
+				<img>
+			</picture>
+			<span>${name}</span>
+		</button>
+	</li>
+</template>
+<template id="servers-list-item">
+	<li data-id="${id}" data-host="${host}">
+		<progress value="0" title="Connection status for: ${host}"></progress>
+		<input name="servers[${id}][host]" value="${host}" type="text" disabled>
+		<menu>
+			<li>
+				<button name="toggle">
+					<span></span>
+				</button>
+			</li>
+			<li>
+				<button name="edit">
+					<span></span>
+				</button>
+			</li>
+			<li>
+				<button name="delete">
+					<span></span>
+				</button>
+			</li>
+		</menu>
+	</li>
+</template>
+<template id="add-contact">
+    <dialog>
+        <form>
+            <h2>Add a new contact</h2>
+            <fieldset>
+                <label>
+                    <span>Name</span>
+                    <input name="name" minlength="1" maxlength="30" type="text">
+                </label>
+                <label>
+                    <span>Address</span>
+                    <input name="host" minlength="6" maxlength="30" type="text" pattern="^[^:]+:(6553[0-5]|655[0-2][0-9]\d|65[0-4](\d){2}|6[0-4](\d){3}|[1-5](\d){4}|[1-9](\d){0,3})$">
+                </label>
+				<details>
+					<summary>
+						<span>Advanced</span>
+					</summary>
+					<label>
+						<span>Stay connected</span>
+						<input name="connected" type="checkbox" checked>
+					</label>
+					<label>
+						<span>Reconnect attempt interval (seconds)</span>
+						<input name="reconnection_interval" type="number" value="30">
+					</label>
+				</details>
+            </fieldset>
+            <button name="cancel">
+				<span>Close</span>
+			</button>
+            <button name="save" type="submit">
+				<span>Save</span>
+			</button>
+        </form>
+    </dialog>
+</template>
+<template id="manage-contact">
+	<dialog>
+		<form>
+			<input name="contact_id" value="${id}" type="hidden">
+			<h2>${title}</h2>
+			<fieldset>
+				<label>
+					<span>Name</span>
+					<input name="name" minlength="1" maxlength="30" value="${name}" type="text">
+				</label>
+				<label>
+					<span>Address</span>
+					<input name="host" minlength="6" maxlength="30" value="${host}" type="text" pattern="^[^:]+:(6553[0-5]|655[0-2][0-9]\d|65[0-4](\d){2}|6[0-4](\d){3}|[1-5](\d){4}|[1-9](\d){0,3})$">
+				</label>
+				<details>
+					<summary>
+						<span>Advanced</span>
+					</summary>
+					<label>
+						<span>Stay connected</span>
+						<input name="connected" value="${stayConnected}" type="checkbox" checked>
+					</label>
+					<label>
+						<span>Reconnect attempt interval (seconds)</span>
+						<input name="reconnection_interval" value="${reconnectionInterval}" type="number">
+					</label>
+				</details>
+			</fieldset>
+			<button name="cancel">
+				<span>Close</span>
+			</button>
+			<button name="delete">
+				<span>Delete</span>
+			</button>
+			<button name="save" type="submit">
+				<span>Save</span>
+			</button>
+		</form>
+	</dialog>
+</template>
+<template id="contacts-list-item">
+	<li data-connection-id="${connection-id}" data-host="${host}" data-contact-id="${id}">
+		<input id="selected_contacts[${index}]" name="selected[]" type="checkbox">
+		<progress value="0"></progress>
+		<label for="selected_contacts[${index}]" title="Contact details for ${name}/${host}">
+			<img>
+			<span>${name}</span>
+		</label>
+		<menu>
+			<li>
+				<button name="toggle">
+					<span></span>
+				</button>
+			</li>
+			<li>
+				<button name="call">
+					<span>&#128379;</span>
+				</button>
+			</li>
+			<li>
+				<button name="message">
+					<span>&#9993;</span>
+				</button>
+			</li>
+			<li>
+				<button name="manage">
+					<span></span>
+				</button>
+			</li>
+		</menu>
+	</li>
+</template>
+<template id="manage-contacts">
+    <dialog>
+        <form>
+            <h2>Manage contact</h2>
+            <input name="contact_id" value="${id}" type="hidden">
+            <fieldset>
+                <label>
+                    <span>Name</span>
+                    <input name="name" value="${name}" type="text">
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <span>Address</span>
+                    <input name="host" value="${host}" type="text">
+                </label>
+            </fieldset>
+            <button name="cancel">
+				<span>Close</span>
+			</button>
+            <button name="save">
+				<span>Save</span>
+			</button>
+            <button name="delete" value="${id}">
+				<span>Delete</span>
+			</button>
+        </form>
+    </dialog>
+</template>
+<template id="messaging-list-item">
+    <li data-connection-id="${connection-id}" data-host="${host}">
+        <h2>
+            <span>${name}</span>
+        </h2>
+        <ul></ul>
+        <form>
+			<input name="connection_id" value="${connection-id}" type="hidden">
+            <menu>
+                <li>
+                    <button>&#9993;</button>
+                </li>
+                <li>
+                    <button>&#65049;</button>
+                </li>
+            </menu>
+			<textarea name="message" required></textarea>
+            <button name="send"><span></span></button>
+<!--            <details>-->
+<!--                <summary>-->
+<!--                    <span>+</span>-->
+<!--                </summary>-->
+<!--                <menu>-->
+<!--                    <li>-->
+<!--                        <button>&#9993;</button>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <button>&#65049;</button>-->
+<!--                    </li>-->
+<!--                </menu>-->
+<!--            </details>-->
+        </form>
+    </li>
+</template>
+<template id="messages-list-item">
+	<li>
+		<time>
+			<span>${datetime}</span>
+		</time>
+		<blockquote>${message}</blockquote>
+	</li>
+</template>
+</body>
+</html>

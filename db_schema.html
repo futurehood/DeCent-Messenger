@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<style>
+		h2>i:before{
+			content: "(";
+		}
+		i:after{
+			content: ")";
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<h2>
+				<span>Active Profile</span>
+				<i>active_profile</i>
+			</h2>
+			<ul>
+				<li>id</li>
+				<li>active_profile_id</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<h2>
+				<span>Profiles</span>
+				<i>profiles</i>
+			</h2>
+			<ul>
+				<li>id</li>
+				<li>name</li>
+				<li>avatar?</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<h2>
+				<span>Servers</span>
+				<i>servers</i>
+			</h2>
+			<ul>
+				<li>id</li>
+				<li>profile_id</li>
+				<li>address</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<h2>
+				<span>Contacts</span>
+				<i>contacts</i>
+			</h2>
+			<ul>
+				<li>id</li>
+				<li>profile_id</li>
+				<li>name</li>
+				<li>address</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<h2>
+				<span>Messages</span>
+				<i>messages</i>
+			</h2>
+			<ul>
+				<li>id</li>
+				<li>profile_id</li>
+				<li>contact_id</li>
+				<li>message</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<h2>
+				<span>Calls</span>
+				<i>calls</i>
+			</h2>
+			<ul>
+				<li>id</li>
+				<li>profile_id</li>
+				<li>contact_id</li>
+				<li>received_at</li>
+				<li>ended_at?</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>

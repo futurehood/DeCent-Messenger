@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeCent Messenger</title>
+    <link rel="manifest" href="manifest.webmanifest">
+	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="css/dialogs.css">
+	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/connections.css">
+    <link rel="stylesheet" href="css/messaging.css">
+    <script src="./js/init.js" type="module" defer></script>
+</head>
+<body>
+	<input id="settings-close" name="view-settings" type="radio" checked>
+	<input id="settings-server" name="view-settings" type="radio">
+	<input id="settings-profile" name="view-settings" type="radio">
+    <input id="connection-state" value="" type="hidden">
+    <main>
+        <ul id="dialogs"></ul>
+        <aside id="contacts">
+            <button id="open-add-contact-dialog">
+                <span>+</span>
+            </button>
+            <form>
+                <ul></ul>
+				<ul></ul>
+            </form>
+        </aside>
+		<header>
+			<menu>
+				<li>
+					<label for="view-full">
+						<span></span>
+					</label>
+				</li>
+				<li>
+					<label for="view-split-horizontal">
+						<span></span>
+					</label>
+				</li>
+				<li>
+					<label for="view-split-vertical">
+						<span></span>
+					</label>
+				</li>
+			</menu>
+			<label for="settings-server">
+				<picture>
+					<img src="images/logo-small.svg">
+				</picture>
+			</label>
+			<label for="settings-profile">
+				<img>
+			</label>
+		</header>
+        <section id="connections">
+			<input id="view-full" name="view-mode[]" value="full" type="radio" checked>
+			<input id="view-split-horizontal" name="view-mode[]" value="split-horizontal" type="radio">
+			<input id="view-split-vertical" name="view-mode[]" value="split-vertical" type="radio">
+			<input id="view-focus-calls" name="view-focus" type="radio">
+            <section id="calls">
+				<header>
+					<label for="view-focus-calls">
+						<span>Calls</span>
+					</label>
+					<menu>
+						<li>
+							<span>︙</span>
+							<menu>
+								<li></li>
+							</menu>
+						</li>
+					</menu>
+				</header>
+<!--				<input id="toggle-calls" type="checkbox">-->
+				<ul></ul>
+			</section>
+			<input id="view-focus-messaging" name="view-focus" type="radio">
+            <section id="messaging">
+				<input id="mw100" name="messaging-window-width[]" value="full" type="radio" checked>
+				<input id="mw50" name="messaging-window-width[]" type="radio" checked>
+				<input id="mw33" name="messaging-window-width[]" type="radio" checked>
+				<input id="mw25" name="messaging-window-width[]" type="radio" checked>
+				<input id="mw20" name="messaging-window-width[]" type="radio" checked>
+				<header>
+					<label for="view-focus-messaging">
+						<span>Messages</span>
+					</label>
+					<menu>
+						<li>
+							<span>︙</span>
+							<menu>
+								<li>
+									<label for="mw100">
+										<span>100%</span>
+									</label>
+								</li>
+								<li>
+									<label for="mw50">
+										<span>50%</span>
+									</label>
+								</li>
+								<li>
+									<label for="mw33">
+										<span>33%</span>
+									</label>
+								</li>
+								<li>
+									<label for="mw25">
+										<span>25%</span>
+									</label>
+								</li>
+								<li>
+									<label for="mw20">
+										<span>20%</span>
+									</label>
+								</li>
+							</menu>
+							<menu>
+								<li>
+									<label>
+										<span>100%</span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<span>50%</span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<span>33%</span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<span>25%</span>
+									</label>
+								</li>
+								<li>
+									<label>
+										<span>20%</span>
+									</label>
+								</li>
+							</menu>
+						</li>
+					</menu>
+				</header>
+<!--				<input id="toggle-messaging" type="checkbox">-->
+                <ul></ul>
+            </section>
+        </section>
+		<section id="settings">
+			<form id="servers">
+				<input name="profile_id" type="hidden">
+				<label for="settings-close">
+					<span>Close</span>
+				</label>
+				<h2>
+					<span>🌐 Servers</span>
+				</h2>
+				<fieldset>
+					<legend>
+						<span>Manage existing servers</span>
+					</legend>
+					<ul></ul>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<span>Add a new server</span>
+					</legend>
+					<label>
+						<span>Address</span>
+						<input name="host" value="127.0.0.1:4201" type="text">
+					</label>
+					<details>
+						<summary>
+							<span>Advanced</span>
+						</summary>
+						<label>
+							<span>Stay connected</span>
+							<input name="connected" type="checkbox" checked>
+						</label>
+						<label>
+							<span>Reconnect attempt interval (seconds)</span>
+							<input name="reconnection_interval" type="number" value="30">
+						</label>
+					</details>
+					<button name="add">
+						<span>Add</span>
+					</button>
+				</fieldset>
+			</form>
+			<form id="profile">
+				<input name="profile_id" type="hidden">
+				<label for="settings-close">
+					<span>Close</span>
+				</label>
+				<h2>
+					<span>✨ Profile</span>
+<!--					<span>🖳 Profile</span>-->
+				</h2>
+				<fieldset>
+					<legend>
+						<span>Manage </span>
+					</legend>
+					<label>
+						<span>Display name</span>
+						<input name="name" data-value-key="name" type="text">
+					</label>
+					<label>
+						<span>Avatar</span>
+						<input name="avatar" value="127.0.0.1" type="file">
+						<img>
+					</label>
+					<button name="save">
+						<span>Save</span>
+					</button>
+					<button name="delete">
+						<span>Delete</span>
+					</button>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<span>Authentication</span>
+					</legend>
+					<button name="sign-out">
+						<span>Sign Out</span>
+					</button>
+				</fieldset>
+			</form>
+			<form id="system"></form>
+		</section>
+    </main>
+</body>
+</html>

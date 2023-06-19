@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "name": "DeCent Messenger",
+    "short_name": "DeCent Messenger",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Private, secure, P2P, E2EE communications in your browser.",
+    "icons": [
+        {
+            "src": "/images/logo_circle.svg",
+            "sizes": "600x600",
+            "type": "image/svg+xml"
+        }
+    ]
+  }

@@ -1,0 +1,64 @@
+#settings {
+    display: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1;
+    top: var(--header-height);
+    left: var(--contacts-width);
+    padding: 0;
+    width: calc(100% - var(--contacts-width));
+    height: calc(100% - var(--header-height));
+    background: #4b4b4b;
+}
+#settings>form{
+    display: none;
+    padding: 1.5em;
+}
+#settings-server:checked~main>#settings>#servers{
+    display: block;
+}
+#settings-profile:checked~main>#settings>#profile{
+    display: block;
+}
+#settings-close:not(:checked)~main>#settings{
+    display: block;
+}
+#settings>form>label{
+    float: right;
+}
+#settings>form>fieldset>label>input[type=text]{
+    width: calc(100% - 8em);
+}
+#settings>form>fieldset>label>input{
+    margin: 0 0 1em;
+}
+
+#settings>form>label>span:before{
+    content: "\02716";
+    margin: 0 .25em 0 0;
+    vertical-align: middle;
+    font-size: 1.25em;
+    color: var(--error);
+}
+
+#profile>fieldset>label>img{
+    display: block;
+    float: left;
+    width: 7em;
+    height: 7em;
+    margin: 0 1em 1em 0 ;
+    border-radius: 5em;
+    border: .1em solid #eee;
+    background: var(--profile-img-url) no-repeat 50% 50%;
+    background-size: contain;
+}
+#profile>fieldset>label:nth-of-type(2){
+    height: 11em;
+    margin: 0 0 1em;
+}
+#profile>fieldset>label:nth-of-type(2){
+    height: 11em;
+    margin: 0 0 1em;
+}
