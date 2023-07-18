@@ -52,6 +52,7 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
   <summary>
     <h2>User Guide</h2>
   </summary>
+  <hr>
   <h3>Contents</h3>
   <ul style="list-style: none; padding: 0;">
     <li>
@@ -71,27 +72,52 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
   <img src="readme/screens-how-to-5.png" width="600">
   <hr>
   <h3 id="creating-a-profile">Creating a Profile</h3>
-  <p>To create a profile, use the <b><i>Create a new profile</i></b> button on the Sign In dialog.</p>
-  <img src="readme/screens-how-to-1.png" width="600">
-  <p>Fill in the details, and use the <b><i>Save</i></b> button to submit the form.</p>
-  <img src="readme/screens-how-to-2.png" width="600">
-  <p>Sign in using the newly created profile</p>
-  <img src="readme/screens-how-to-3.png" width="600">
+  <table>
+    <tr>
+      <td><img src="readme/screens-how-to-1.png" width="600"></td>
+      <td><img src="readme/screens-how-to-2.png" width="600"></td>
+      <td><img src="readme/screens-how-to-3.png" width="600"></td>
+    </tr>
+  </table>
+  <ol>
+    <li>To create a profile, use the <b><i>Create a new profile</i></b> button on the Sign In dialog.</li>
+    <li>Fill in the details, and use the <b><i>Save</i></b> button to submit the form.</li>
+    <li>Sign in using the newly created profile</li>
+  </ol>
   <hr>
   <h3>Managing a Profile</h3>
-  <p>Use the <b><i>Profile Settings</i></b> button in the top right of the UI to open the manage profile dialog.</p>
-  <p>From here, the profile can be signed out, modified, or deleted.</p>
-  <img src="readme/screens-how-to-6.png" width="600">
+  <table>
+    <tr>
+      <td><img src="readme/screens-how-to-6.png" width="600"></td>
+    </tr>
+  </table>
+  <ol>
+    <li>Use the <b><i>Profile Settings</i></b> button in the top right of the UI to open the manage profile dialog.</li>
+    <li>From here, the profile can be signed out, modified, or deleted.</li>
+  </ol>
   <hr>
   <h3>Managing Servers</h3>
+  <table>
+    <tr>
+      <td><img src="readme/screens-how-to-7.png" width="600"></td>
+      <td><img src="readme/screens-how-to-8.png" width="600"></td>
+      <td><img src="readme/screens-how-to-9.png" width="600"></td>
+      <td><img src="readme/screens-how-to-10.png" width="600"></td>
+    </tr>
+  </table>
   <p>To manage the servers associated with a profile, sign in to the profile, and use the <b><i>Server Settings</i></b> button to open the manage servers dialog.</p>
   <img src="readme/screens-how-to-7.png" width="600">
   <p>To add a server, enter the host address in the <b><i>Address</i></b> field and use the <b><i>Add</i></b> button to submit the form.</p>
   <img src="readme/screens-how-to-8.png" width="600">
   <p>Once the server has been added, the connection state can be controlled by the <b><i>Toggle Connection State</i></b> button.</p>
   <img src="readme/screens-how-to-9.png" width="600">
+  <p>Green indicators mean the connection was successful and ongoing. The indicator at the top (also serving as the <b><i>Server Settings</i></b> button) will only be green if all servers are connected successfully. If there is an error with one of the servers, the indicator will be orange. If no servers are connected the indicator will be read.</p>
   <img src="readme/screens-how-to-10.png" width="600">
+  <hr>
+  <h3>Adding a Contact</h3>
+  <p>To add a contact, use the <b><i>Add Contact</i></b> button in the top left of the UI to open the proper dialog.</p>
   <img src="readme/screens-how-to-11.png" width="600">
+  <p>Fill in the <i>Name</i> field and the <i>Address</i> field and use the <b><i>Save</i></b> button to submit the form.</p>
   <img src="readme/screens-how-to-12.png" width="600">
   <img src="readme/screens-how-to-13.png" width="600">
   <img src="readme/screens-how-to-14.png" width="600">
