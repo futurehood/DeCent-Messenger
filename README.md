@@ -65,19 +65,30 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
   <h3 id="signing-in">Signing In</h3>
   <p>Upon opening the application, you will be prompted to sign in. Select the desired profile to continue. If necessary, create a new profile.</p>
   <img src="readme/screens-how-to-3.png" width="600">
-  <p>Once signed in, the UI will be empty. Everything is ready to go.</p>
+  <p>The <b><i>Remember selection</i></b> option can be used to automatically sign in as specified user in the future.</p>
   <img src="readme/screens-how-to-4.png" width="600">
+  <p>Once signed in, the UI will be empty. Everything is ready to go.</p>
+  <img src="readme/screens-how-to-5.png" width="600">
   <hr>
   <h3 id="creating-a-profile">Creating a Profile</h3>
   <p>To create a profile, use the <b><i>Create a new profile</i></b> button on the Sign In dialog.</p>
   <img src="readme/screens-how-to-1.png" width="600">
   <p>Fill in the details, and use the <b><i>Save</i></b> button to submit the form.</p>
   <img src="readme/screens-how-to-2.png" width="600">
-
-  <img src="readme/screens-how-to-5.png" width="600">
+  <p>Sign in using the newly created profile</p>
+  <img src="readme/screens-how-to-3.png" width="600">
+  <hr>
+  <h3>Managing a Profile</h3>
+  <p>Use the <b><i>Profile Settings</i></b> button in the top right of the UI to open the manage profile dialog.</p>
+  <p>From here, the profile can be signed out, modified, or deleted.</p>
   <img src="readme/screens-how-to-6.png" width="600">
+  <hr>
+  <h3>Managing Servers</h3>
+  <p>To manage the servers associated with a profile, sign in to the profile, and use the <b><i>Server Settings</i></b> button to open the manage servers dialog.</p>
   <img src="readme/screens-how-to-7.png" width="600">
+  <p>To add a server, enter the host address in the <b><i>Address</i></b> field and use the <b><i>Add</i></b> button to submit the form.</p>
   <img src="readme/screens-how-to-8.png" width="600">
+  <p>Once the server has been added, the connection state can be controlled by the <b><i>Toggle Connection State</i></b> button.</p>
   <img src="readme/screens-how-to-9.png" width="600">
   <img src="readme/screens-how-to-10.png" width="600">
   <img src="readme/screens-how-to-11.png" width="600">
