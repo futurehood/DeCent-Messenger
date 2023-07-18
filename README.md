@@ -1,6 +1,11 @@
-# DeCent-Messenger
+# Welcome, Good people!
 
-<img src="readme/amuletz.svg#play" style="width: 25%;">
+<table>
+  <tr>
+    <td><img src="readme/amuletz.svg#play" style="width: 350px;"></td>
+    <td><img src="readme/decent-messenger-logo.svg#play" style="width: 500px;"></td>
+  </tr>
+</table>
 
 ## Overview
 
@@ -21,8 +26,8 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
 
 <table>
   <tr>
-    <td><img src="readme/dwa-logo3.png"width="100"></td>
     <td><img src="readme/dcnt-compatible-badge.png" width="300"></td>
+    <td><img src="readme/dwa-logo3.png"width="120"></td>
   </tr>
 </table>
 
@@ -34,8 +39,9 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
 
 <details>
   <summary>
-    <h2>Installation Guide</h2>
+    <span>Installation Guide</span>
   </summary>
+  <h2>System requirements</h2>
   <p>To install DeCent Messenger locally using DeCent-Core, follow these steps:</p>
   <table>
     <tr>
