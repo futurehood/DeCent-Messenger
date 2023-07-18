@@ -61,15 +61,30 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
     <li>
       <a href="#creating-a-profile">Creating a profile</a>
     </li>
+    <li>
+      <a href="#creating-a-profile">Manage a profile</a>
+    </li>
+    <li>
+      <a href="#creating-a-profile">Adding a server</a>
+    </li>
+    <li>
+      <a href="#creating-a-profile">Managing a server</a>
+    </li>
   </ul>
   <hr>
   <h3 id="signing-in">Signing In</h3>
-  <p>Upon opening the application, you will be prompted to sign in. Select the desired profile to continue. If necessary, create a new profile.</p>
-  <img src="readme/screens-how-to-3.png" width="600">
-  <p>The <b><i>Remember selection</i></b> option can be used to automatically sign in as specified user in the future.</p>
-  <img src="readme/screens-how-to-4.png" width="600">
-  <p>Once signed in, the UI will be empty. Everything is ready to go.</p>
-  <img src="readme/screens-how-to-5.png" width="600">
+  <table>
+    <tr>
+      <td><img src="readme/screens-how-to-3.png" width="600"></td>
+      <td><img src="readme/screens-how-to-4.png" width="600"></td>
+      <td><img src="readme/screens-how-to-5.png" width="600"></td>
+    </tr>
+  </table>
+  <ol>
+    <li>Upon opening the application, you will be prompted to sign in. Select the desired profile to continue. If necessary, create a new profile.</li>
+    <li>The <b><i>Remember selection</i></b> option can be used to automatically sign in as specified user in the future.</li>
+    <li>Once signed in, the UI will be empty. Everything is ready to go.</li>
+  </ol> 
   <hr>
   <h3 id="creating-a-profile">Creating a Profile</h3>
   <table>
@@ -105,24 +120,43 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
       <td><img src="readme/screens-how-to-10.png" width="600"></td>
     </tr>
   </table>
-  <p>To manage the servers associated with a profile, sign in to the profile, and use the <b><i>Server Settings</i></b> button to open the manage servers dialog.</p>
-  <img src="readme/screens-how-to-7.png" width="600">
-  <p>To add a server, enter the host address in the <b><i>Address</i></b> field and use the <b><i>Add</i></b> button to submit the form.</p>
-  <img src="readme/screens-how-to-8.png" width="600">
-  <p>Once the server has been added, the connection state can be controlled by the <b><i>Toggle Connection State</i></b> button.</p>
-  <img src="readme/screens-how-to-9.png" width="600">
-  <p>Green indicators mean the connection was successful and ongoing. The indicator at the top (also serving as the <b><i>Server Settings</i></b> button) will only be green if all servers are connected successfully. If there is an error with one of the servers, the indicator will be orange. If no servers are connected the indicator will be read.</p>
-  <img src="readme/screens-how-to-10.png" width="600">
+  <ol>
+    <li>To manage the servers associated with a profile, sign in to the profile, and use the <b><i>Server Settings</i></b> button to open the manage servers dialog.</li>
+    <li>To add a server, enter the host address in the <b><i>Address</i></b> field and use the <b><i>Add</i></b> button to submit the form.</li>
+    <li>Once the server has been added, the connection state can be controlled by the <b><i>Toggle Connection State</i></b> button.</li>
+    <li>Green indicators mean the connection was successful and ongoing. The indicator at the top (also serving as the <b><i>Server Settings</i></b> button) will only be green if all servers are connected successfully. If there is an error with one of the servers, the indicator will be orange. If no servers are connected the indicator will be read.</li>
+    <li></li>
+  </ol>
   <hr>
   <h3>Adding a Contact</h3>
-  <p>To add a contact, use the <b><i>Add Contact</i></b> button in the top left of the UI to open the proper dialog.</p>
-  <img src="readme/screens-how-to-11.png" width="600">
-  <p>Fill in the <i>Name</i> field and the <i>Address</i> field and use the <b><i>Save</i></b> button to submit the form.</p>
-  <img src="readme/screens-how-to-12.png" width="600">
-  <img src="readme/screens-how-to-13.png" width="600">
-  <img src="readme/screens-how-to-14.png" width="600">
-  <img src="readme/screens-how-to-15.png" width="600">
-  <img src="readme/screens-how-to-16.png" width="600">
+  <table>
+    <tr>
+      <td><img src="readme/screens-how-to-11.png" width="600"></td>
+      <td><img src="readme/screens-how-to-12.png" width="600"></td>
+    </tr>
+  </table>
+  <ol>
+    <li>To add a contact, use the <b><i>Add Contact</i></b> button in the top left of the UI to open the proper dialog.</li>
+    <li>Fill in the <i>Name</i> field and the <i>Address</i> field and use the <b><i>Save</i></b> button to submit the form.</li>
+  </ol>
+  <hr>
+  <h3 id="managing-a-contact">Managing a contact</h3>
+  <table>
+    <tr>
+      <td><img src="readme/screens-how-to-14.png" width="600"></td>
+      <td><img src="readme/screens-how-to-15.png" width="600"></td>
+      <td><img src="readme/screens-how-to-16.png" width="600"></td>
+    </tr>
+  </table>
+  <ol>
+    <li>Hover over the contact in the Contacts list</li>
+    <li>Use the <b><i>More options</i></b> button to open the manage contact dialog. From here the contact can be contact, modified, or deleted.</li>
+    <li>The Contact dialog also has a <b><i>More options</i></b> button.</li>
+  </ol>
+  
+  
+  
+  
 
 </details>
 
