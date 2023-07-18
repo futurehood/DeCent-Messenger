@@ -52,21 +52,41 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
   <summary>
     <h2>User Guide</h2>
   </summary>
-  <h3>Signing In</h3>
+  <h3>Contents</h3>
+  <ul style="list-style: none; padding: 0;">
+    <li>
+      <a href="#signing-in">Signing in</a>
+    </li>
+    <li>
+      <a href="#creating-a-profile">Creating a profile</a>
+    </li>
+  </ul>
+  <hr>
+  <h3 id="signing-in">Signing In</h3>
   <p>Upon opening the application, you will be prompted to sign in. Select the desired profile to continue. If necessary, create a new profile.</p>
   <img src="readme/screens-how-to-3.png" width="600">
-  <h3>Creating a Profile</h3>
-  <ol>
-    <li>
-      <p>To create a profile, use the ***Create a new profile*** button on the Sign In dialog.</p>
-      <img src="readme/screens-how-to-1.png" width="600">
-    </li>
-    <li>
-      <p>Fill in the details, and use the ***Save*** button to submit the form.</p>
-      <img src="readme/screens-how-to-2.png" width="600">
-    </li>
-    <li></li>
-  </ol>
+  <p>Once signed in, the UI will be empty. Everything is ready to go.</p>
+  <img src="readme/screens-how-to-4.png" width="600">
+  <hr>
+  <h3 id="creating-a-profile">Creating a Profile</h3>
+  <p>To create a profile, use the <b><i>Create a new profile</i></b> button on the Sign In dialog.</p>
+  <img src="readme/screens-how-to-1.png" width="600">
+  <p>Fill in the details, and use the <b><i>Save</i></b> button to submit the form.</p>
+  <img src="readme/screens-how-to-2.png" width="600">
+
+  <img src="readme/screens-how-to-5.png" width="600">
+  <img src="readme/screens-how-to-6.png" width="600">
+  <img src="readme/screens-how-to-7.png" width="600">
+  <img src="readme/screens-how-to-8.png" width="600">
+  <img src="readme/screens-how-to-9.png" width="600">
+  <img src="readme/screens-how-to-10.png" width="600">
+  <img src="readme/screens-how-to-11.png" width="600">
+  <img src="readme/screens-how-to-12.png" width="600">
+  <img src="readme/screens-how-to-13.png" width="600">
+  <img src="readme/screens-how-to-14.png" width="600">
+  <img src="readme/screens-how-to-15.png" width="600">
+  <img src="readme/screens-how-to-16.png" width="600">
+
 </details>
 
 
