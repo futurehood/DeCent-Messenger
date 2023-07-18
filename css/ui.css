@@ -1,0 +1,282 @@
+:root {
+    --bg: #fff;
+    --color: #000;
+    --subheading-color: #c3a1ff;
+    --accent: #dac4ff;
+    --link-color: #7d36ff;
+    --success: #3fe1bb;
+    --button: #7d36ff;
+    --warning: #ffb66d;
+    --error: #ff2592;
+    --border-color: #333;
+    --caution: #ffdc00;
+    --profile-img-url: url("../images/user.svg");
+
+    --dialog-background: #4b4b4b;
+
+    --contacts-width: 25em;
+    --contacts-background: #333;
+
+    --header-height: 3em;
+    --connections-background: #494949;
+    --connections-header-height: 2.5em;
+
+    --calls-width: 100%;
+    --calls-height: 50%;
+
+    --messages-top: 50%;
+    --messages-width: 100%;
+    --messages-height: 50%;
+    --messages-ul-height: calc(100% - var(--textarea-height));
+
+    --messaging-h2-height: 2em;
+    --messaging-form-height: 6em;
+
+    --textarea-height: 5.5em;
+
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #333;
+        --color: #fff;
+        --subheading-color: #c3a1ff;
+        --link-color: #bd96fd;
+        --success: #4fff80;
+        --success: #3fe1a3;
+        --success-bright: #00ffc3;
+        --warning: #ffb66d;
+        --error: #ff2566;
+        --error: #ff6996;
+        --border-color: #5d5d5d;
+    }
+}
+@font-face {
+    src: url("/fonts/Rubik-VariableFont_wght.ttf") format("ttf supports variations"),
+    url("/fonts/Rubik-VariableFont_wght.ttf") format("ttf-variations");
+    font-weight: 100 1000;
+}
+html {
+    scroll-behavior: smooth;
+}
+html * {
+    scrollbar-width: thin;
+}
+html::-webkit-scrollbar {
+    background: none;
+    width: .5em;
+}
+html::-webkit-scrollbar-thumb {
+    background: #ebebeb;
+    height: 60%;
+}
+label,button{
+    cursor: pointer;
+}
+/*****************************************
+** Body
+*****************************************/
+body {
+    font-family: Rubik, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--color);
+    scrollbar-width: thin;
+}
+a {
+    color: var(--link-color);
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+summary{
+    cursor: pointer;
+}
+
+body>input{
+    display: none;
+}
+#dialogs {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#profile-selector>form>section>fieldset>menu>button{
+    display: block;
+}
+/*****************************************
+** Main
+*****************************************/
+main {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*#calls {*/
+/*    display: block;*/
+/*    box-sizing: border-box;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: var(--calls-width);*/
+/*    height: var(--calls-height);*/
+/*}*/
+#profile-id:not([value])~main>*:not(#dialogs){
+    display: none;
+}
+
+/*****************************************
+** Header
+*****************************************/
+main>header {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: var(--contacts-width);
+    width: calc(100% - var(--contacts-width));
+    height: var(--header-height);
+    margin: 0;
+    padding: 0 1em 0 0;
+    font-size: 1em;
+    line-height: 3em;
+    border-bottom: .1em solid var(--border-color);
+    text-align: right;
+    background: #414141;
+}
+main>header>label{
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top:  0;
+    padding: .75em;
+    width: 3em;
+    height: 3em;
+    font-weight: 400;
+}
+main>header>label:nth-of-type(1) {
+    right: 2.5em;
+}
+main>header>label:nth-of-type(2) {
+    right: 0;
+}
+main>header>label>picture {
+    display: block;
+    box-sizing: border-box;
+    padding: .15em;
+    border: .1em solid #8a8a8a;
+    border-radius: 3em;
+}
+main>header>label>picture>img{
+    display: block;
+    /*width: 100%;*/
+}
+main>header>label>img {
+    box-sizing: border-box;
+    padding: .15em;
+    border: .1em solid #8a8a8a;
+    border-radius: 3em;
+}
+#connection-state[value="0"]~main>header>label:nth-of-type(1)>picture>img{
+    filter: brightness(0) saturate(100%) invert(67%) sepia(45%) saturate(4792%) hue-rotate(306deg) brightness(103%) contrast(101%);
+    /*border-color: var(--error);*/
+}
+#connection-state[value="1"]~main>header>label:nth-of-type(1)>picture>img{
+    filter: invert(91%) sepia(10%) saturate(2703%) hue-rotate(98deg) brightness(90%) contrast(96%);
+    border-color: var(--warning);
+}
+#connection-state[value="2"]~main>header>label:nth-of-type(1)>picture>img{
+    filter: brightness(0) saturate(100%) invert(77%) sepia(96%) saturate(2481%) hue-rotate(95deg) brightness(100%) contrast(102%);
+    border-color: var(--success);
+}
+
+main>header>label>img{
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+}
+main>header>label:nth-of-type(2)>img{
+    content: var(--profile-img-url);
+}
+main>header>label>span:after{
+    display: inline-block;
+    content: "";
+    margin-left: .5em;
+    width: .75em;
+    height: .75em;
+    border-radius: 1.5em;
+    vertical-align: middle;
+    background: #4fff80;
+}
+main>header>label[for=settings]>span{
+    font-size: 1.5em;
+}
+main>header>menu{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    color: #a9a9a9;
+}
+main>header>menu>li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+}
+/*main>header>menu>li>label{*/
+/*    */
+/*    width: 3em;*/
+/*    height: 3em;*/
+/*}*/
+main>header>menu:hover{
+    height: 9em;
+    width: 3em;
+    background: #414141;
+}
+main>header>menu:hover>li{
+    position: static;
+}
+main>header>menu>li>label{
+    /*padding: .25em .5em;*/
+}
+main>header>menu>li>label>span{
+    font-size: 1.5em;
+}
+
+label[for=view-full]>span:before{
+    content: "\25fb";
+}
+label[for=view-split-horizontal]>span:before{
+    content: "\25eb";
+    display: block;
+    /*width: 0em;*/
+    /*height: 0em;*/
+}
+label[for=view-split-horizontal]{
+    display: block;
+
+    transform: rotate(-90deg);
+    transform-origin: center center;
+    transform-box: content-box;
+}
+label[for=view-split-vertical]>span:before{
+    content: "\25eb";
+}
