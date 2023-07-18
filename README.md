@@ -1,16 +1,27 @@
 # DeCent-Messenger
 
+<img src="readme/amuletz.svg" style="width: 25%; float: left;">
+
 ## Overview
+
+<blockquote>Fuck the Babylon,<br>who's trying to see what I'm on</blockquote>
 
 DeCent Messenger is a web application designed to facilitate perfect privacy in digital communications.
 
 - 100% Decentralized
 - Peer-to-peer (P2P) Communication
 - End-to-end Encryption (EE2E)
+- Zero metadata generation
 
-#### Demo URL: https://futurehood.github.io/DeCent-Messenger/
+***Demo URL:*** https://futurehood.github.io/DeCent-Messenger/
 
-#### Installation URL: https://github.com/futurehood/DeCent-Messenger/archive/refs/heads/main.zip
+***Installation URL:*** https://github.com/futurehood/DeCent-Messenger/archive/refs/heads/main.zip
+
+## About
+
+Created by the wizard Future Hood in service to the Goodness, for the benefit of all humankind. Maintained by the Merry Band.
+
+## Documentation
 
 <details>
   <summary>
@@ -103,7 +114,7 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
   <h3>Managing a Profile</h3>
   <table>
     <tr>
-      <td><img src="readme/screens-how-to-6.png" width="600"></td>
+      <td><img src="readme/screens-how-to-6.png" width="300"></td>
     </tr>
   </table>
   <ol>
@@ -124,15 +135,15 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
     <li>To manage the servers associated with a profile, sign in to the profile, and use the <b><i>Server Settings</i></b> button to open the manage servers dialog.</li>
     <li>To add a server, enter the host address in the <b><i>Address</i></b> field and use the <b><i>Add</i></b> button to submit the form.</li>
     <li>Once the server has been added, the connection state can be controlled by the <b><i>Toggle Connection State</i></b> button.</li>
-    <li>Green indicators mean the connection was successful and ongoing. The indicator at the top (also serving as the <b><i>Server Settings</i></b> button) will only be green if all servers are connected successfully. If there is an error with one of the servers, the indicator will be orange. If no servers are connected the indicator will be read.</li>
-    <li></li>
+    <li>Green indicators mean the connection was successful and is ongoing. The indicator at the top (also serving as the <b><i>Server Settings</i></b> button) will only be green if all servers are connected successfully.</li>
+    <li>If there is an error with one of the servers, the indicator will be orange. If no servers are connected the indicator will be red.</li>
   </ol>
   <hr>
   <h3>Adding a Contact</h3>
   <table>
     <tr>
-      <td><img src="readme/screens-how-to-11.png" width="600"></td>
-      <td><img src="readme/screens-how-to-12.png" width="600"></td>
+      <td><img src="readme/screens-how-to-11.png" width="300"></td>
+      <td><img src="readme/screens-how-to-12.png" width="300"></td>
     </tr>
   </table>
   <ol>
@@ -149,11 +160,36 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
     </tr>
   </table>
   <ol>
-    <li>Hover over the contact in the Contacts list</li>
-    <li>Use the <b><i>More options</i></b> button to open the manage contact dialog. From here the contact can be contact, modified, or deleted.</li>
+    <li>Hover over the contact in the Contacts list to expose the <b><i>More options</i></b> button. Use the button to open the manage contact dialog</li>
+    <li>From here the contact can be contacted, modified, or deleted.</li>
     <li>The Contact dialog also has a <b><i>More options</i></b> button.</li>
   </ol>
-  
+  <hr>
+  <h3>Send a message</h3>
+  <table>
+    <tr>
+      <td><img src="readme/screens-how-to-17.png" width="600"></td>
+      <td><img src="readme/screens-how-to-18.png" width="600"></td>
+      <td><img src="readme/screens-how-to-19.png" width="600"></td>
+      <td><img src="readme/screens-how-to-20.png" width="600"></td>
+    </tr>
+  </table>
+  <ol>
+    <li>To send a message to a contact, hover over the contacts list to expose the <b><i>Messaging</i></b> button</li>
+    <li>After the messaging window appears, input a message in the text box.</li>
+    <li>Use the green <b><i>Send message</i></b> button to send the message to the contact.</li>
+    <li>Maybe you will get a reply!</li>
+  </ol>
+  <hr>
+  <h3>Managing a messaging session</h3>
+  <table>
+    <tr>
+      <td><img src="readme/screens-how-to-21.png" width="600"></td>
+      <td><img src="readme/screens-how-to-22.png" width="600"></td>
+      <td><img src="readme/screens-how-to-23.png" width="600"></td>
+      <td><img src="readme/screens-how-to-24.png" width="600"></td>
+    </tr>
+  </table>
   
   
   
