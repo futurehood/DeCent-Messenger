@@ -1,5 +1,13 @@
 # DeCent-Messenger
 
+## Overview
+
+DeCent Messenger is a web application designed to facilitate perfect privacy in digital communications.
+
+- 100% Decentralized
+- Peer-to-peer (P2P) Communication
+- End-to-end Encryption (EE2E)
+
 #### Demo URL: https://futurehood.github.io/DeCent-Messenger/
 
 ## Installation
