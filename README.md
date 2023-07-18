@@ -1,10 +1,12 @@
 # DeCent-Messenger
 
-<img src="readme/amuletz.svg#play" style="width: 25%; float: left;">
+<img src="readme/amuletz.svg#play" style="width: 25%;">
 
 ## Overview
 
 <blockquote>Fuck the Babylon,<br>who's trying to see what I'm on</blockquote>
+
+
 
 DeCent Messenger is a web application designed to facilitate perfect privacy in digital communications.
 
@@ -16,6 +18,13 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
 ***Demo URL:*** https://futurehood.github.io/DeCent-Messenger/
 
 ***Installation URL:*** https://github.com/futurehood/DeCent-Messenger/archive/refs/heads/main.zip
+
+<table>
+  <tr>
+    <td><img src="readme/dwa-logo3.png"width="100"></td>
+    <td><img src="readme/dcnt-compatible-badge.png" width="300"></td>
+  </tr>
+</table>
 
 ## About
 
@@ -61,10 +70,9 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
 </details>
 <details>
   <summary>
-    <h2>User Guide</h2>
+    <span>User Guide</span>
   </summary>
-  <hr>
-  <h3>Contents</h3>
+  <h2>Contents</h2>
   <ul style="list-style: none; padding: 0;">
     <li>
       <a href="#signing-in">Signing in</a>
@@ -82,8 +90,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
       <a href="#creating-a-profile">Managing a server</a>
     </li>
   </ul>
-  <hr>
-  <h3 id="signing-in">Signing In</h3>
+  <h2 id="signing-in">Signing In</h2>
   <table>
     <tr>
       <td><img src="readme/screens-how-to-3.png" width="600"></td>
@@ -96,8 +103,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
     <li>The <b><i>Remember selection</i></b> option can be used to automatically sign in as specified user in the future.</li>
     <li>Once signed in, the UI will be empty. Everything is ready to go.</li>
   </ol> 
-  <hr>
-  <h3 id="creating-a-profile">Creating a Profile</h3>
+  <h2 id="creating-a-profile">Creating a Profile</h2>
   <table>
     <tr>
       <td><img src="readme/screens-how-to-1.png" width="600"></td>
@@ -110,8 +116,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
     <li>Fill in the details, and use the <b><i>Save</i></b> button to submit the form.</li>
     <li>Sign in using the newly created profile</li>
   </ol>
-  <hr>
-  <h3>Managing a Profile</h3>
+  <h2>Managing a Profile</h2>
   <table>
     <tr>
       <td><img src="readme/screens-how-to-6.png" width="300"></td>
@@ -121,8 +126,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
     <li>Use the <b><i>Profile Settings</i></b> button in the top right of the UI to open the manage profile dialog.</li>
     <li>From here, the profile can be signed out, modified, or deleted.</li>
   </ol>
-  <hr>
-  <h3>Managing Servers</h3>
+  <h2>Managing Servers</h2>
   <table>
     <tr>
       <td><img src="readme/screens-how-to-7.png" width="600"></td>
@@ -138,8 +142,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
     <li>Green indicators mean the connection was successful and is ongoing. The indicator at the top (also serving as the <b><i>Server Settings</i></b> button) will only be green if all servers are connected successfully.</li>
     <li>If there is an error with one of the servers, the indicator will be orange. If no servers are connected the indicator will be red.</li>
   </ol>
-  <hr>
-  <h3>Adding a Contact</h3>
+  <h2>Adding a Contact</h2>
   <table>
     <tr>
       <td><img src="readme/screens-how-to-11.png" width="300"></td>
@@ -150,8 +153,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
     <li>To add a contact, use the <b><i>Add Contact</i></b> button in the top left of the UI to open the proper dialog.</li>
     <li>Fill in the <i>Name</i> field and the <i>Address</i> field and use the <b><i>Save</i></b> button to submit the form.</li>
   </ol>
-  <hr>
-  <h3 id="managing-a-contact">Managing a contact</h3>
+  <h2 id="managing-a-contact">Managing a contact</h2>
   <table>
     <tr>
       <td><img src="readme/screens-how-to-14.png" width="600"></td>
@@ -164,8 +166,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
     <li>From here the contact can be contacted, modified, or deleted.</li>
     <li>The Contact dialog also has a <b><i>More options</i></b> button.</li>
   </ol>
-  <hr>
-  <h3>Send a message</h3>
+  <h2>Send a message</h2>
   <table>
     <tr>
       <td><img src="readme/screens-how-to-17.png" width="600"></td>
@@ -180,8 +181,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
     <li>Use the green <b><i>Send message</i></b> button to send the message to the contact.</li>
     <li>Maybe you will get a reply!</li>
   </ol>
-  <hr>
-  <h3>Managing a messaging session</h3>
+  <h2>Managing a messaging session</h2>
   <table>
     <tr>
       <td><img src="readme/screens-how-to-21.png" width="600"></td>
