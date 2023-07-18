@@ -118,12 +118,12 @@
                 transform: rotate3d(0, 1, 1, 360deg);
             }
         }
-        #play *{
-            animation-play-state: paused;
-        }
-        #play:target *{
-            animation-play-state: running;
-        }
+<!--        #play *{-->
+<!--            animation-play-state: paused;-->
+<!--        }-->
+<!--        #play:target *{-->
+<!--            animation-play-state: running;-->
+<!--        }-->
     </style>
     <g id="play">
         <circle class="ring" cx="350" cy="350" r="273.109" style="fill:none;stroke:#fff;stroke-width:6.26px;"/>
