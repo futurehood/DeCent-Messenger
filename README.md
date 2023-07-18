@@ -1,6 +1,6 @@
 # DeCent-Messenger
 
-<img src="readme/amuletz.svg" style="width: 25%; float: left;">
+<img src="readme/amuletz.svg#play" style="width: 25%; float: left;">
 
 ## Overview
 
@@ -19,7 +19,7 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
 
 ## About
 
-Created by the wizard Future Hood in service to the Goodness, for the benefit of all humankind. Maintained by the Merry Band.
+Created by the wizard Future Hood in service of the Goodness, for the benefit of all humankind. Maintained by the Merry Band.
 
 ## Documentation
 
