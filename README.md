@@ -1,8 +1,8 @@
 # DeCent-Messenger
 
-## Installation
+#### Demo URL: https://futurehood.github.io/DeCent-Messenger/
 
-#### Hosted/Demo URL: https://futurehood.github.io/DeCent-Messenger/
+## Installation
 
 #### Installation URL: https://github.com/futurehood/DeCent-Messenger/archive/refs/heads/main.zip
 
