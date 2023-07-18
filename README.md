@@ -2,9 +2,9 @@
 
 ## Installation
 
-Hosted/Demo URL: https://futurehood.github.io/DeCent-Messenger/
-<br>
-Installation URL: https://github.com/futurehood/DeCent-Messenger/archive/refs/heads/main.zip
+### Hosted/Demo URL: https://futurehood.github.io/DeCent-Messenger/
+
+### Installation URL: https://github.com/futurehood/DeCent-Messenger/archive/refs/heads/main.zip
 
 To install DeCent Messenger locally using DeCent-Core, follow these steps:
 
