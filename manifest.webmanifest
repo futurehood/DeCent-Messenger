@@ -2,7 +2,7 @@
     "$schema": "https://json.schemastore.org/web-manifest-combined.json",
     "name": "DeCent Messenger",
     "short_name": "DeCent Messenger",
-    "start_url": ".",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#fff",
     "description": "Private, secure, P2P, E2EE communications in your browser.",

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" />
     <title>DeCent Messenger</title>
+	<link rel="icon" href="images/favicon.svg">
     <link rel="manifest" href="manifest.webmanifest">
 	<link rel="stylesheet" href="css/ui.css">
 	<link rel="stylesheet" href="css/forms.css">
@@ -16,6 +18,7 @@
 	<input id="settings-close" name="view-settings" type="radio" checked>
 	<input id="settings-server" name="view-settings" type="radio">
 	<input id="settings-profile" name="view-settings" type="radio">
+	<input id="profile-id" name="profile_id" form="profile" type="hidden">
     <input id="connection-state" value="" type="hidden">
     <main>
         <ul id="dialogs"></ul>
@@ -25,7 +28,6 @@
             </button>
             <form>
                 <ul></ul>
-				<ul></ul>
             </form>
         </aside>
 		<header>
@@ -56,107 +58,117 @@
 			</label>
 		</header>
         <section id="connections">
-			<input id="view-full" name="view-mode[]" value="full" type="radio" checked>
-			<input id="view-split-horizontal" name="view-mode[]" value="split-horizontal" type="radio">
-			<input id="view-split-vertical" name="view-mode[]" value="split-vertical" type="radio">
-			<input id="view-focus-calls" name="view-focus" type="radio">
-            <section id="calls">
-				<header>
-					<label for="view-focus-calls">
-						<span>Calls</span>
-					</label>
-					<menu>
-						<li>
-							<span>︙</span>
-							<menu>
-								<li></li>
-							</menu>
-						</li>
-					</menu>
-				</header>
-<!--				<input id="toggle-calls" type="checkbox">-->
-				<ul></ul>
-			</section>
-			<input id="view-focus-messaging" name="view-focus" type="radio">
-            <section id="messaging">
-				<input id="mw100" name="messaging-window-width[]" value="full" type="radio" checked>
-				<input id="mw50" name="messaging-window-width[]" type="radio" checked>
-				<input id="mw33" name="messaging-window-width[]" type="radio" checked>
-				<input id="mw25" name="messaging-window-width[]" type="radio" checked>
-				<input id="mw20" name="messaging-window-width[]" type="radio" checked>
-				<header>
-					<label for="view-focus-messaging">
-						<span>Messages</span>
-					</label>
-					<menu>
-						<li>
-							<span>︙</span>
-							<menu>
-								<li>
-									<label for="mw100">
-										<span>100%</span>
-									</label>
-								</li>
-								<li>
-									<label for="mw50">
-										<span>50%</span>
-									</label>
-								</li>
-								<li>
-									<label for="mw33">
-										<span>33%</span>
-									</label>
-								</li>
-								<li>
-									<label for="mw25">
-										<span>25%</span>
-									</label>
-								</li>
-								<li>
-									<label for="mw20">
-										<span>20%</span>
-									</label>
-								</li>
-							</menu>
-							<menu>
-								<li>
-									<label>
-										<span>100%</span>
-									</label>
-								</li>
-								<li>
-									<label>
-										<span>50%</span>
-									</label>
-								</li>
-								<li>
-									<label>
-										<span>33%</span>
-									</label>
-								</li>
-								<li>
-									<label>
-										<span>25%</span>
-									</label>
-								</li>
-								<li>
-									<label>
-										<span>20%</span>
-									</label>
-								</li>
-							</menu>
-						</li>
-					</menu>
-				</header>
-<!--				<input id="toggle-messaging" type="checkbox">-->
-                <ul></ul>
-            </section>
+			<form>
+				<input id="view-full" name="view-mode[]" value="full" type="radio" checked>
+				<input id="view-split-horizontal" name="view-mode[]" value="split-horizontal" type="radio">
+				<input id="view-split-vertical" name="view-mode[]" value="split-vertical" type="radio">
+				<input id="view-focus-calls" name="view-focus" type="radio">
+				<section id="calls">
+					<header>
+						<label for="view-focus-calls">
+							<span>Calls</span>
+						</label>
+						<menu>
+							<li>
+								<span>︙</span>
+								<menu>
+									<li></li>
+								</menu>
+							</li>
+						</menu>
+					</header>
+					<!--				<input id="toggle-calls" type="checkbox">-->
+					<ul></ul>
+				</section>
+				<input id="view-focus-messaging" name="view-focus" type="radio">
+				<section id="messaging">
+					<input id="mw100" name="messaging-window-width[]" value="full" type="radio">
+					<input id="mw50" name="messaging-window-width[]" type="radio" checked>
+					<input id="mw33" name="messaging-window-width[]" type="radio">
+					<input id="mw25" name="messaging-window-width[]" type="radio">
+					<input id="mw20" name="messaging-window-width[]" type="radio">
+					<input id="mh100" name="messaging-window-height[]" value="full" type="radio" checked>
+					<input id="mh50" name="messaging-window-height[]" type="radio">
+					<input id="mh33" name="messaging-window-height[]" type="radio">
+					<input id="mh25" name="messaging-window-height[]" type="radio">
+					<input id="mh20" name="messaging-window-height[]" type="radio">
+					<header>
+						<label for="view-focus-messaging">
+							<span>Messages</span>
+						</label>
+						<menu>
+							<li>
+								<span>⧉</span>
+								<menu id="messaging-windows"><menu>
+							</li>
+							<li>
+								<span>︙</span>
+								<menu>
+									<li>
+										<label for="mw100">
+											<span>100%</span>
+										</label>
+									</li>
+									<li>
+										<label for="mw50">
+											<span>50%</span>
+										</label>
+									</li>
+									<li>
+										<label for="mw33">
+											<span>33%</span>
+										</label>
+									</li>
+									<li>
+										<label for="mw25">
+											<span>25%</span>
+										</label>
+									</li>
+									<li>
+										<label for="mw20">
+											<span>20%</span>
+										</label>
+									</li>
+								</menu>
+								<menu>
+									<li>
+										<label for="mh100">
+											<span>100%</span>
+										</label>
+									</li>
+									<li>
+										<label for="mh50">
+											<span>50%</span>
+										</label>
+									</li>
+									<li>
+										<label for="mh33">
+											<span>33%</span>
+										</label>
+									</li>
+									<li>
+										<label for="mh25">
+											<span>25%</span>
+										</label>
+									</li>
+									<li>
+										<label for="mh20">
+											<span>20%</span>
+										</label>
+									</li>
+								</menu>
+							</li>
+						</menu>
+					</header>
+					<ul></ul>
+				</section>
+			</form>
         </section>
 		<section id="settings">
 			<form id="servers">
 				<input name="profile_id" type="hidden">
 				<label for="settings-close">
-					<span>Close</span>
+					<span></span>
 				</label>
 				<h2>
 					<span>🌐 Servers</span>
@@ -194,13 +206,11 @@
 				</fieldset>
 			</form>
 			<form id="profile">
-				<input name="profile_id" type="hidden">
 				<label for="settings-close">
-					<span>Close</span>
+					<span></span>
 				</label>
 				<h2>
 					<span>✨ Profile</span>
-<!--					<span>🖳 Profile</span>-->
 				</h2>
 				<fieldset>
 					<legend>
