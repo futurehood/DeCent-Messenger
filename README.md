@@ -62,7 +62,7 @@ If you'd like to support the project financially, we would greatly appreciate th
     <li>As a non-user of DeCent-Core, or any other DCNT server</li>
   </ul>
   <p>Both types of users require a modern web browser that supports WebRTC. We highly recommend Firefox.</p>
-  <p>Users without a DCNT server running locally will be restricted to outgoing connections to DCNT server users. These users will also be restricted to accessing the application on traditonal hosting, or figuring out another way to host the application locally.</p>
+  <p>Users without a DCNT server running locally will be restricted to outgoing connections to DCNT server users. These users will also be restricted to accessing the application on traditonal hosting (like the demo here on Github), or figuring out another way to host the application locally within an SSL/TLS context.</p>
   <p>Users with a DCNT server running locally can both create outgoing connections and receive inbound connections. These users also have the option of easily installing the application locally using DeCent-Core or another DCNT server.</p>
   <p>For more information on DeCent-Core, or other DCNT servers, check the main <a href="https://github.com/futurehood/DeCent">project repository</a>.</p>
   <h2>Local Installation</h2>
