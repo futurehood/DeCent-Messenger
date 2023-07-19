@@ -35,6 +35,33 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
 
 Created by the wizard Future Hood in service of the Goodness, for the benefit of all humankind. Maintained by the Merry Band.
 
+## Contribute
+
+While we are not looking for code contributions on this project at this time, we encourage users to create their own DCNT-compatible, decentralized web applications (DWAs). Help us build a more open and free Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
+
+We may also be looking for help with another aspect of the DeCent project. Check the main project repository if you're looking for something to help with!
+
+## Support Development
+
+If you'd like to support the project financially, we would greatly appreciate the help. Due to privacy concerns and to protect the anonymity of the developers, we can only accept Bitcoin and Monero for the time being.
+
+<ul>
+  <li>
+    <figure>
+      <figcaption><b>BTC:</b></figcaption>
+      <address><i>bc1qz9g5zjls3eapjdacwcgadw83apu22hnlwtj0sm</i></address>
+    </figure>
+  </li>
+  <li>
+    <figure>
+      <figcaption><b>XMR:</b></figcaption>
+      <address><i>43X5gj33PCaZ5NCQRD53kNa24KQoVbUUxayKaEcmpVyb5gfqcqG6KPR9MgrvT5k5cEQyKA1v3xNWidzZgynRKp1L4NAkZEh</i></address>
+    </figure>
+  </li>
+</ul>
+  
+
+
 ## Documentation
 
 <details>
