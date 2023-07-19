@@ -59,7 +59,7 @@ If you'd like to support the project financially, we would greatly appreciate th
   <p>There are two ways to use this application:</p>
   <ul>
     <li>As a DeCent-Core user, or as a user of another DCNT server</li>
-    <li>As a non-user</li>
+    <li>As a non-user of DeCent-Core, or any other DCNT server</li>
   </ul>
   <p>Both types of users require a modern web browser that supports WebRTC. We highly recommend Firefox.</p>
   <p>Users without a DCNT server running locally will be restricted to outgoing connections to DCNT server users. These users will also be restricted to accessing the application on traditonal hosting, or figuring out another way to host the application locally.</p>
