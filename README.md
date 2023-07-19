@@ -26,8 +26,8 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
 
 <table>
   <tr>
-    <td><img src="readme/dcnt-compatible-badge.png" width="300"></td>
-    <td><img src="readme/dwa-logo3.png"width="120"></td>
+    <td><a href="#"><img src="readme/dcnt-compatible-badge.png" width="300"></a></td>
+    <td><a href="#"><img src="readme/dwa-logo3.png"width="120"></a></td>
   </tr>
 </table>
 
