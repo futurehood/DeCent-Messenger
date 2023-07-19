@@ -26,8 +26,8 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
 
 <table>
   <tr>
-    <td><a href="#"><img src="readme/dcnt-compatible-badge.png" width="300"></a></td>
-    <td><a href="#"><img src="readme/dwa-logo3.png"width="120"></a></td>
+    <td><a href="https://github.com/futurehood/DeCent"><img src="readme/dcnt-compatible-badge.png" width="300"></a></td>
+    <td><a href="https://github.com/futurehood/DWA"><img src="readme/dwa-logo3.png"width="120"></a></td>
   </tr>
 </table>
 
@@ -45,23 +45,10 @@ We may also be looking for help with another aspect of the DeCent project. Check
 
 If you'd like to support the project financially, we would greatly appreciate the help. Due to privacy concerns and to protect the anonymity of the developers, we can only accept Bitcoin and Monero for the time being.
 
-<ul>
-  <li>
-    <figure>
-      <figcaption><b>BTC:</b></figcaption>
-      <address><i>bc1qz9g5zjls3eapjdacwcgadw83apu22hnlwtj0sm</i></address>
-    </figure>
-  </li>
-  <li>
-    <figure>
-      <figcaption></figcaption>
-      <address><b>XMR: </b><i>43X5gj33PCaZ5NCQRD53kNa24KQoVbUUxayKaEcmpVyb5gfqcqG6KPR9MgrvT5k5cEQyKA1v3xNWidzZgynRKp1L4NAkZEh</i></address>
-    </figure>
-  </li>
-</ul>
-  
+`BTC: bc1qz9g5zjls3eapjdacwcgadw83apu22hnlwtj0sm`  
 
-
+`XMR: 43X5gj33PCaZ5NCQRD53kNa24KQoVbUUxayKaEcmpVyb5gfqcqG6KPR9MgrvT5k5cEQyKA1v3xNWidzZgynRKp1L4NAkZEh`
+ 
 ## Documentation
 
 <details>
