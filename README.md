@@ -31,19 +31,44 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
   </tr>
 </table>
 
+## Features
+
+<table>
+  <tr>
+    <th>Current Features</th>
+    <th>Upcoming Features</th>
+  <tr>
+    <td>
+      <ul>
+        <li>Persistent peer-to-peer connections</li>
+        <li>P2P text messaging</li>
+        <li>P2P file transfers</li>
+        <li>Avatar exchange</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Voice/video calls</li>
+        <li>Encrypted datastore</li>
+        <li>Key-based authentication</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## About
 
-Created by the wizard Future Hood in service of the Goodness, for the benefit of all humankind. Maintained by the Merry Band.
+Created by the wizard Future Hood in service of the Goodness, for the benefit of all humankind.
 
 ## Contribute
 
-While we are not looking for code contributions on this project at this time, we encourage users to create their own DCNT-compatible, decentralized web applications (DWAs). Help us build the true Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
+The project is in active development internally and lacks the resources and/or need to consider outside code contributions at this time. Instead, interested parties are encouraged to create their own DCNT-compatible, decentralized web applications (DWAs). Help build the true Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
 
-We may also be looking for help with another aspect of the DeCent project. Check the main project repository if you're looking for something to help with!
+There may also be a need for help with another aspect of the DeCent project. Check the <a href="https://github.com/futurehood/DeCent">main project repository</a> if you're looking for something to help with!
 
 ## Support Development
 
-If you'd like to support the project financially, we would greatly appreciate the help. Due to privacy concerns and to protect the anonymity of the developers, we can only accept Bitcoin and Monero for the time being.
+If you'd like to support the project financially, any help is greatly appreciated. Due to privacy concerns and to protect the anonymity of the developer, only accept Bitcoin and Monero are accepted for the time being.
 
 `BTC: bc1qz9g5zjls3eapjdacwcgadw83apu22hnlwtj0sm`  
 
@@ -61,7 +86,7 @@ If you'd like to support the project financially, we would greatly appreciate th
     <li>As a DeCent-Core user, or as a user of another DCNT server</li>
     <li>As a non-user of DeCent-Core, or any other DCNT server</li>
   </ul>
-  <p>Both types of users require a modern web browser that supports WebRTC. We highly recommend Firefox.</p>
+  <p>Both types of users require a modern web browser that supports WebRTC. Firefox is highly recommended.</p>
   <p>Users without a DCNT server running locally will be restricted to outgoing connections to DCNT server users. These users will also be restricted to accessing the application on traditonal hosting (like the demo here on Github), or figuring out another way to host the application locally within an SSL/TLS context.</p>
   <p>Users with a DCNT server running locally can both create outgoing connections and receive inbound connections. These users also have the option of easily installing the application locally using DeCent-Core or another DCNT server.</p>
   <p>For more information on DeCent-Core, or other DCNT servers, check the main <a href="https://github.com/futurehood/DeCent">project repository</a>.</p>
