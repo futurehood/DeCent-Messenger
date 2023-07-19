@@ -37,7 +37,7 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
 
 ## Contribute
 
-While we are not looking for code contributions on this project at this time, we encourage users to create their own DCNT-compatible, decentralized web applications (DWAs). Help us build a more open and free Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
+While we are not looking for code contributions on this project at this time, we encourage users to create their own DCNT-compatible, decentralized web applications (DWAs). Help us build the true Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
 
 We may also be looking for help with another aspect of the DeCent project. Check the main project repository if you're looking for something to help with!
 
@@ -56,6 +56,16 @@ If you'd like to support the project financially, we would greatly appreciate th
     <span>Installation Guide</span>
   </summary>
   <h2>System requirements</h2>
+  <p>There are two ways to use this application:</p>
+  <ul>
+    <li>As a DeCent-Core user, or as a user of another DCNT server</li>
+    <li>As a non-user</li>
+  </ul>
+  <p>Both types of users require a modern web browser that supports WebRTC. We highly recommend Firefox.</p>
+  <p>Users without a DCNT server running locally will be restricted to outgoing connections to DCNT server users. These users will also be restricted to accessing the application on traditonal hosting, or figuring out another way to host the application locally.</p>
+  <p>Users with a DCNT server running locally can both create outgoing connections and receive inbound connections. These users also have the option of easily installing the application locally using DeCent-Core or another DCNT server.</p>
+  <p>For more information on DeCent-Core, or other DCNT servers, check the main <a href="https://github.com/futurehood/DeCent">project repository</a>.</p>
+  <h2>Local Installation</h2>
   <p>To install DeCent Messenger locally using DeCent-Core, follow these steps:</p>
   <table>
     <tr>
@@ -210,10 +220,6 @@ If you'd like to support the project financially, we would greatly appreciate th
       <td><img src="readme/screens-how-to-24.png" width="600"></td>
     </tr>
   </table>
-  
-  
-  
-
 </details>
 
 
