@@ -54,8 +54,8 @@ If you'd like to support the project financially, we would greatly appreciate th
   </li>
   <li>
     <figure>
-      <figcaption><b>XMR:</b></figcaption>
-      <address><i>43X5gj33PCaZ5NCQRD53kNa24KQoVbUUxayKaEcmpVyb5gfqcqG6KPR9MgrvT5k5cEQyKA1v3xNWidzZgynRKp1L4NAkZEh</i></address>
+      <figcaption></figcaption>
+      <address><b>XMR: </b><i>43X5gj33PCaZ5NCQRD53kNa24KQoVbUUxayKaEcmpVyb5gfqcqG6KPR9MgrvT5k5cEQyKA1v3xNWidzZgynRKp1L4NAkZEh</i></address>
     </figure>
   </li>
 </ul>
