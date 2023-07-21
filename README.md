@@ -15,9 +15,9 @@
 
 DeCent Messenger is a web application designed to facilitate perfect privacy in digital communications.
 
-- 100% Decentralized
-- Peer-to-peer (P2P) Communication
-- End-to-end Encryption (EE2E)
+- 100% decentralized infrastructure
+- Peer-to-peer (P2P) connections only
+- End-to-end encryption (EE2E)
 - Zero metadata generation
 
 ***Demo URL:*** https://futurehood.github.io/DeCent-Messenger/
@@ -62,13 +62,13 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
 
 ## Contribute
 
-The project is in active development internally and lacks the resources and/or need to consider outside code contributions at this time. Instead, interested parties are encouraged to create their own DCNT-compatible, decentralized web applications (DWAs). Help build the true Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
+The project is in active development internally and lacks the resources to consider outside code contributions at this time. Instead, interested parties are encouraged to create their own DCNT-compatible, decentralized web applications (DWAs). Help build the true Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
 
-There may also be a need for help with another aspect of the DeCent project. Check the <a href="https://github.com/futurehood/DeCent">main project repository</a> if you're looking for something to help with!
+There may also be a need for help with another aspect of the DeCent project. Check the <a href="https://github.com/futurehood/DeCent">main project repository</a> if you're looking for something to help with.
 
 ## Support Development
 
-If you'd like to support the project financially, any help is greatly appreciated. Due to privacy concerns and to protect the anonymity of the developer, only accept Bitcoin and Monero are accepted for the time being.
+If you want to support the project financially, it is greatly appreciated. To protect the anonymity of the developer, only Bitcoin and Monero are accepted for the time being.
 
 `BTC: bc1qz9g5zjls3eapjdacwcgadw83apu22hnlwtj0sm`  
 
