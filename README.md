@@ -87,7 +87,7 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
     <li>As a DeCent-Core user, or as a user of another DCNT server</li>
     <li>As a non-user of DeCent-Core, or any other DCNT server</li>
   </ul>
-Both types of users require a modern web browser that supports WebRTC. Firefox is highly recommended.<br><br> 
+Both types of users require a modern web browser that supports WebRTC. Firefox is highly recommended.<br><br>
 
 Users without a DCNT server running locally will be restricted to outgoing connections to DCNT server users. These users will also be restricted to accessing the application on traditonal hosting (like the demo here on Github), or figuring out another way to host the application locally within an SSL/TLS context.
 
@@ -101,9 +101,9 @@ Created by the wizard Future Hood in service of the Goodness, for the benefit of
 
 ## Contribute
 
-The project is in active development internally and lacks the resources to consider outside code contributions at this time. Instead, interested parties are encouraged to create their own DCNT-compatible, decentralized web applications (DWAs). Help build the true Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
+Interested parties are encouraged to create their own DCNT-compatible, decentralized web applications (DWAs). Help build the true Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
 
-There may also be a need for help with another aspect of the DeCent project. Check the <a href="https://github.com/futurehood/DeCent">main project repository</a> if you're looking for something to help with.
+Check the <a href="https://github.com/futurehood/DeCent">main project repository</a> if you're looking for something to help with.
 
 ## Support Development
 
