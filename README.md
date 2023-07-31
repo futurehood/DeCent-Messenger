@@ -56,13 +56,38 @@ DeCent Messenger is a web application designed to facilitate perfect privacy in 
   </tr>
 </table>
 
+## Screenshots
+
+<table>
+    <tr>
+        <td>
+            <img src="readme/screens-how-to-3.png">
+        </td>
+        <td>
+            <img src="readme/screens-how-to-6.png">
+        </td>
+        <td>
+            <img src="readme/screens-how-to-7.png">
+        </td>
+        <td>
+            <img src="readme/screens-how-to-11.png">
+        </td>
+        <td>
+            <img src="readme/screens-how-to-15.png">
+        </td>
+        <td>
+            <img src="readme/screens-how-to-20.png">
+        </td>
+    </tr>
+</table>
+
 ## System requirements
   <p>There are two ways to use this application:</p>
   <ul>
     <li>As a DeCent-Core user, or as a user of another DCNT server</li>
     <li>As a non-user of DeCent-Core, or any other DCNT server</li>
   </ul>
-Both types of users require a modern web browser that supports WebRTC. Firefox is highly recommended.
+Both types of users require a modern web browser that supports WebRTC. Firefox is highly recommended.<br><br> 
 
 Users without a DCNT server running locally will be restricted to outgoing connections to DCNT server users. These users will also be restricted to accessing the application on traditonal hosting (like the demo here on Github), or figuring out another way to host the application locally within an SSL/TLS context.
 
