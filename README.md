@@ -7,6 +7,33 @@
   </tr>
 </table>
 
+<ul>
+    <li>
+        <a href="#overview">Overview</a>
+    </li>
+    <li>
+        <a href="#features">Features</a>
+    </li>
+    <li>
+        <a href="#screenshots">Screenshots</a>
+    </li>
+    <li>
+        <a href="#system-requirements">System Requirements</a>
+    </li>
+    <li>
+        <a href="#about">About</a>
+    </li>
+    <li>
+        <a href="#contribute">Contribute</a>
+    </li>
+    <li>
+        <a href="#support-development">Support Development</a>
+    </li>
+    <li>
+        <a href="#documentation">Documentation</a>
+    </li>
+</ul>
+
 ## Overview
 
 <blockquote>Fuck the Babylon,<br>who's trying to see what I'm on</blockquote>
