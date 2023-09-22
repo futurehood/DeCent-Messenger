@@ -124,7 +124,7 @@ Users with a DCNT server running locally can both create outgoing connections an
 
 ## About
 
-Created by the wizard Future Hood in service of the Goodness, for the benefit of all the Good people.
+Maintained by the Merry Band for the benefit of all the Good people.
 
 ## Contribute
 
