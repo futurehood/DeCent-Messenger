@@ -38,8 +38,6 @@
 
 <blockquote>Fuck the Babylon,<br>who's trying to see what I'm on</blockquote>
 
-
-
 DeCent Messenger is a web application designed to facilitate perfect privacy in digital communications.
 
 - 100% decentralized infrastructure
@@ -128,7 +126,7 @@ Maintained by the Merry Band for the benefit of all the Good people.
 
 ## Contribute
 
-Interested parties are encouraged to create their own DCNT-compatible, decentralized web applications (DWAs). Help build the true Internet. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
+Interested parties are encouraged to create their own DCNT-compatible, decentralized web applications (DWAs). Help build the true One True Interwebz. For more information on <a href="">DWA development</a>, or the <a href="">DCNT protocol</a>, please visit the respective repositories.
 
 Check the <a href="https://github.com/futurehood/DeCent">main project repository</a> if you're looking for something to help with.
 
